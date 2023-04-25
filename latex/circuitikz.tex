@@ -1,0 +1,286 @@
+\documentclass[a4paper]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{siunitx}
+\usepackage[siunitx, RPvoltages, betterproportions]{circuitikz}
+
+\title{CircuiTikz}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Instruments}
+
+Instruments are immune to rotation. Take a look.
+
+\begin{circuitikz}
+    \foreach \a in {0,45,...,350}{
+        \draw (0,0) to[oscope] (\a:3);
+    }
+\end{circuitikz}
+
+Some examples with voltmeter and ammeter.
+
+\begin{circuitikz}[american]
+    \draw (0,0) -- ++(1,0) to[R] ++(2,0)
+    to[smeter, t=A, i=$i$] ++(0,-2) node[ground]{};
+    \draw (1,0) to[smeter, t=V, v=$v$] ++(0,-2) node[ground]{};
+\end{circuitikz}
+
+\begin{circuitikz}
+    \draw (0,0) -- ++(1,0) to[R] ++(2,0)
+    to[qiprobe, l=$i$] ++(0,-2) node[ground]{};
+    \draw (1,0) to[qvprobe, l=$v$] ++(0,-2)
+    node[ground]{};
+\end{circuitikz}
+
+\section{Beginning}
+
+We begin our journey with this kind of circuit. It is the first kind of electrical circuit you study, usually, when you are a child/teenager and when you are in early days of university or college.
+
+\begin{circuitikz}[american]
+    \draw (0,0) to[isource, l=$I_0$] (0,3)
+    to[short, -*, f=$I_0$] (2,3)
+    to[R=$R_1$, f>_=$i_1$] (2,0)
+    -- (0,0);
+    \draw (2,3) -- (4,3)
+    to[R=$R_2$, f>_=$i_2$] (4,0)
+    to[short] (2,0);
+    %mixing tikz elements
+    \draw[red] (1.5, 2.5) rectangle (4.5, 3.5)
+        node[pos=0.5, above]{KCL};
+\end{circuitikz}
+
+\begin{circuitikz}[european, voltage shift=0.5]
+    \draw (0,0) to[isource, l=$I_0$, v=$V_0$] (0,3)
+    to[short, -*, f=$I_0$] (2,3)
+    to[R=$R_1$, f>^=$i_1$] (2,0)
+    -- (0,0);
+    \draw (2,3) -- (4,3)
+    to[R=$R_2$, f<_=$i_2$] (4,0)
+    to[short] (2,0);
+\end{circuitikz}
+
+\begin{circuitikz}[american]
+    \draw (0,0) to[isource, l=$I_0$] (0,3)
+    to[short, -*, i=$I_0$] (2,3)
+    to[R=$R_1$, i>^=$i_1$] (2,0)
+    -- (0,0);
+    \draw (2,3) -- (4,3)
+    to[R=$R_2$, i<_=$i_2$] (4,0)
+    to[short] (2,0);
+\end{circuitikz}
+
+\begin{circuitikz}[american]
+    \draw (0,0) to[isource, l=$I_0$] (0,3)
+    to[short, -*, i=$I_0$] (2,3)
+    to[R=$R_1$, i=$i_1$] (2,0)
+    -- (0,0);
+    \draw (2,3) -- (4,3)
+    to[R=$R_2$, i=$i_2$] (4,0)
+    to[short] (2,0);
+\end{circuitikz}
+
+\begin{circuitikz}[american]
+    \draw (0,0) to[isource, l=$I_0$] (0,3) -- (2,3)
+    to[R=$R_1$] (2,0) -- (0,0); 
+    \draw (2,3) -- (4,3)
+    to[R=$R_3$] (4,0) -- (2,0);
+\end{circuitikz}
+
+\begin{circuitikz}
+    \draw (0,0) to[R=2, i=?, v=84] (2,0)
+    -- (2,2) to[V<=84] (0,2)
+    -- (0,0);
+\end{circuitikz}
+
+\begin{circuitikz}
+    \draw (0,0) to[isource] (0,3) -- (2,3)
+    to[R] (2,0) -- (0,0); 
+\end{circuitikz}
+
+\section{Path-style components}
+
+Most path-style components can be used as a node-style component; to access them, you add a shape to the main name of component (for example, diodeshape).
+
+\begin{circuitikz}
+    \draw (0,0) to[potentiometer, name=P, mirror] ++(0,2);
+    \draw (P.wiper) to[L] ++(2,0); 
+\end{circuitikz}
+
+\section{Node-style components}
+
+Some op-amps to play with
+
+\begin{circuitikz}[scale=0.7, transform shape]
+    \draw (0,0) node[op amp] {OA1};
+    \draw (0,3) node[op amp] {OA2};
+    %xscale e yscale also affect text labels
+    %so they need to be un-scaled \scalebox{-1}{1}
+    %another option is to use one of these 3 helper macros
+    %\ctikzflipx{}
+    %\ctikzflipy{}
+    %\ctikzflipxy{}
+    \draw (3,3) node[op amp, xscale=-1] {OA3};
+    \draw (3,0) node[op amp, xscale=-1] {OA4};
+\end{circuitikz}
+
+\begin{circuitikz}[scale=0.7, transform shape]
+    \draw (0,0) node[op amp] {OA1};
+    \draw (0,3) node[op amp] {OA2};
+    \draw (3,3) node[op amp, xscale=-1] {\ctikzflipx{OA3}};
+    \draw (3,0) node[op amp, xscale=-1] {\ctikzflipx{OA4}};
+\end{circuitikz}
+
+\section{Resistive bipoles}
+
+Resistors everywhere.
+
+\begin{circuitikz}
+    \ctikzset{
+        resistors/width=1.5,
+        resistors/zigs=9,
+    }
+\end{circuitikz}
+
+\section{Inductors}
+
+They can be really cute.
+
+\begin{circuitikz}
+    [
+        longL/.style = {
+            cute choke,
+            inductors/scale = 0.75,
+            inductors/width = 1.6,
+            inductors/coils = 9,
+        },
+    ]
+    \draw (0, 1.5) to[L, l=$L$] ++(4,0); 
+    \draw (0, 0) to[longL, l=$L$] ++(4,0); 
+    \ctikzset{inductors/scale=1.5, inductor=american}
+    \draw (0, -1.5) to[L, l=$L$] ++(4,0);
+\end{circuitikz}
+
+Customizing the chokes (which come only in the cute style)
+
+\begin{circuitikz}
+    \draw (0,0) to[cute choke] ++(3,0); 
+    \draw (0,-1) to[cute choke, twolineschoke] ++(3,0); 
+
+    \ctikzset{bipoles/cutechoke/cthick=2, twolineschoke}
+
+    \draw (0,-2) to[cute choke ] ++(3,0); 
+    \draw (0,-3) to[cute choke, onelinechoke] ++(3,0); 
+\end{circuitikz}
+
+\section{Transformers}
+
+We work a lot with transformers. Let's learn how to draw them properly.
+
+\begin{circuitikz}
+   \draw
+   (0,0) node[transformer] (T) {}
+   (T.A1) node[anchor=east] {A1}
+   (T.A2) node[anchor=east] {A2}
+   (T.B1) node[anchor=west] {B1}
+   (T.B2) node[anchor=west] {B2}
+   (T.base) node{K}
+   (T.inner dot A1) node[circ]{}
+   (T.inner dot B2) node[circ]{}
+   ;
+\end{circuitikz}
+
+\begin{circuitikz}
+    \ctikzset{
+        quadpoles/transformer/width=1,
+        quadpoles/transformer/height=2,
+        %quadpoles style=inward (default),
+    }
+    \draw
+    (0,0) node[transformer] (T) {}
+    (T.base) node{K}
+    (T.inner dot A1) node[circ]{}
+    (T.inner dot B2) node[circ]{}
+    ;
+\end{circuitikz}
+    
+\begin{circuitikz}
+    \ctikzset{
+        quadpoles/transformer/width=1,
+        quadpoles/transformer/height=2,
+        inductor=cute,
+        quadpoles style=inline,
+    }
+    \draw
+    (0,0) node[transformer] (T) {}
+    (T.base) node{K}
+    (T.inner dot A1) node[circ]{}
+    (T.inner dot B2) node[circ]{}
+    ;
+\end{circuitikz}
+
+\begin{circuitikz}[american]
+    \begin{scope}
+        \ctikzset{
+        transformer L1/.style={
+            inductors/coils=1,
+            inductors/width=0.2,
+        }
+    }
+        \draw (0,0) node[transformer](T1){};
+    \end{scope}
+    \draw (3,0) node[transformer](T2){};
+\end{circuitikz}
+
+\begin{circuitikz}
+    \ctikzset{
+        quadpoles style=inline,
+        cute inductors,
+        transformer L1/.style={
+            inductors/coils=2,
+            inductors/width=0.2,
+        }
+    }
+    \draw (0,0) node[transformer](T1){};
+    \ctikzset{
+        quadpoles style=inward,
+        cute inductors,
+        transformer L2/.style = {
+            inductors/coils=7,
+            inductors/width=1.0,
+        }
+    }
+    \draw (3,0) node[transformer](T2){};
+\end{circuitikz}
+
+%\begin{circuitikz}
+%    %oosourcetrans and oosource have been added by user @olfline
+%    %May 3,2020. version?
+%    %My version of circuitikz is deprecated
+%    \draw (0,0) to[oosourcetrans, prim=zig, sec=delta, o-] ++(2,0)
+%        to[oosourcetrans, prim=delta, sec=wye, -o] ++(0,-2)
+%        to[ooosource, prim=wye, sec=zig, tert=delta] (0,0);
+%\end{circuitikz}
+
+\begin{circuitikz}
+    \ctikzset{
+        quadpoles style=inward,
+        cute inductors,
+        transformer L1/.style={
+            inductors/coils=9,
+            inductors/width=1.0,
+        },
+        transformer L2/.style={
+            inductors/coils=3,
+            inductors/width=0.4,
+        },
+    }
+    \draw (0,0) node[transformer] (T1) {};
+\end{circuitikz}
+
+
+\end{document}
