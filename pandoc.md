@@ -1,68 +1,33 @@
 
 # Install
 
-## Quick cabal method. Not so quick
-
-Problem installing with apt-get
-Must install with cabal
-But, problem installing cabal (a kind of package manager of Haskell world)
-
-Steps
-    1. install cabal
-    2. install pandoc with cabal
-
-Install with cabal, in order to get the latest version
-
+Fetch the development code by cloning the repository
 ```
-sudo apt install cabal
-cabal update
-cabal install pandoc-cli
-sudo cabal install pandoc-cli
+git clone https://github.com/jgm/pandoc
+cd pandoc
+git submodule update --init #to fetch the templates
 ```
-
-exitfailure1 during configure step
-
-Some research about cabal and cabal install
-Do not use --global flag. It is dangerous
-
-Possible steps to solve the issue
-    1. update cabal
-    2. reset your packages
-    3. cabal update
-    4. cabal install pandoc-cli
-
-```
-cabal --version
-cabal install cabal-install
-```
-
-```
-rm -rf ~/.ghc ~/.cabal
-```
-
-```
-cabal update
-cabal install pandoc-cli
-```
-
-Some error about symlinks and cabal permissions for dealing with them
-Run away from this method. Go to the next one
 
 ## Quick stack method
 
+Install stack
 ```
 apt search stack | less ... then /haskell
 sudo apt install haskell-stack
+stack upgrade
+```
+
+Issue the following commands
+```
+# Change to pandoc directory and issue the following commands
 stack setup
-stack install pandoc-cli
+stack install --test
 ```
 
-Error: While constructing the build plan, the following exceptions were encountered ... dependencies stuff
-
-Should I install pandoc before, and only then install pandoc-cli?
-Trying
+Add '~/.local/bin' to your PATH
 ```
-stack install pandoc
+# inside ~/.bashrc
+export PATH="$HOME/.local/bin:$PATH"
 ```
 
 # Basic usage

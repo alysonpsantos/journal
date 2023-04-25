@@ -1,4 +1,7 @@
-Bash scripting
+# Examples
+
+## Automate git push in all repositories
+pushpush.sh
 
 # shebang
 

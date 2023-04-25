@@ -1,6 +1,6 @@
-# Vim editor
+# Struglled with
 
-# Paste
+## Paste
 
 :set paste
 :set nopaste
@@ -21,21 +21,7 @@ go back to the last selection: gv
 
 To list all user-defined commands: :com[mand]
 
-## Plugins
-
-### junegunn/fzf 
-### sirver/ultisnips
-### lervag/vimtex
-### preservim/vimux
-### nanotee/zoxide
-### christoomey/vim-tmux-navigator
-### dracula/vim
-
-## Related
-
-vimrc
-
-## Beginning
+# Beginning
 
 - vimtutor
 - :help 
@@ -79,10 +65,34 @@ Using counts
 ## Deletion commands
 
 dw delete word
-db
 
 
-## Thanks
 
-Youtube Channel. Mental Outlaw
+# Plugins
 
+## junegunn/fzf 
+## sirver/ultisnips
+## lervag/vimtex
+
+vimtex is a vim plugin that 'provides convenient functionality for editing LaTeX documents'.
+
+vimtex provides mappings that change, delete and toggle commands, delimiters and environments (see the ds, cs and ts family of mappings) (vimtex-dfault-mapings). These mappings are inspired by surround.vim by Tim Pope
+
+the default local-leader key is \
+(check dotfiles/vimrc, but changed to ,)
+
+,ll to compile
+,le to vimtex-errors
+,lk to stop
+,lk to stop all
+,lL to compile only selected lines
+,lt to vimtex-toc-open
+,lT to vimtex-toc-toggle 
+
+F6 to surround something
+]] to navigate faster
+
+## preservim/vimux
+## nanotee/zoxide
+## christoomey/vim-tmux-navigator
+## dracula/vim
