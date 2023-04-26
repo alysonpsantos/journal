@@ -3,7 +3,7 @@
 Bash scripting after learning the tools
 and the basic commands
 
-Primitive tools
+Primitive tools (and not so primitive tools)
 
 # pwd
 # ls
@@ -52,7 +52,10 @@ Text manipulation tools
 
 Others
 
+# ranger
+## config file
 # fzf
+## bash configuration
 # history
 # strace
 # dtrace
