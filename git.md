@@ -23,6 +23,29 @@ git config --global --edit
 git config --list --show-origin
 ```
 
+# config using alias
+
+```
+# create directory
+mkdir .dotfiles
+
+# alias
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+# make alias permanent
+# !! expands to previous command
+echo !! >>~/.bashrc
+
+# use alias to init and config
+dotfiles init
+dotfiles config --local status.showUntrackedFiles no
+
+# alias usage
+dotfiles add ~/.bashrc
+dotfiles commit -m 'Initial commit with .bashrc'
+dotfiles branch -M main
+```
+
 # initialize git
 ```
 git init
