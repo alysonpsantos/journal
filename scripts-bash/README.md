@@ -1,10 +1,5 @@
-# Examples
 
-## Automate git push in all repositories
-pushpush.sh
-
-# shebang
-
+Shebang
 ```
 #! /bin/bash
 ```
