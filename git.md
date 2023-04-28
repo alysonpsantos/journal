@@ -1,7 +1,5 @@
-git --version
-(sudo apt install git)
 
-# config
+## some config 
 
 ```
 git config (fatal: not in a git repository)
@@ -23,58 +21,125 @@ git config --global --edit
 git config --list --show-origin
 ```
 
-# config using alias
+## ssh authentication
+
+more on ssh note
+
+## remote
+
+git remote "Manage set of tracked repositories ('remotes')"
+
+Using ssh (password not available anymore)
+```
+git remote add origin git@github.com:username/your-repository.git
+```
+
+## first thing
+
+You must initialize a new repository
+
+Initialize a new local repository (empty)
+```
+git init
+```
+
+More options
+```
+git init
+git init --initial-branch=<branch_name>
+```
+
+### for managing dotfiles
+
+Credit to (internet?)
+
+We need a barebones repository, suitable for use as a remote over ssh
 
 ```
-# create directory
+## create directory
 mkdir .dotfiles
 
-# alias
+## alias
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-# make alias permanent
-# !! expands to previous command
+## make alias permanent
+## !! expands to previous command
 echo !! >>~/.bashrc
 
-# use alias to init and config
+## use alias to init and config
 dotfiles init
 dotfiles config --local status.showUntrackedFiles no
 
-# alias usage
+## alias usage
 dotfiles add ~/.bashrc
 dotfiles commit -m 'Initial commit with .bashrc'
 dotfiles branch -M main
 ```
 
-# initialize git
+## git add
+
+git add "Adds changed files to the index"
+
 ```
-git init
+git add <path/to/file>
+git add -A, --all, --no-ignore-removal
+
+#removes as well as modifies index entries 
+#to match the working tree, 
+#but adds no new files.
+#i.e, only add already tracked files
+git add -u, --update 
+
+#allow adding otherwise ignored files
+git add -f, --force
+
+#interactively stage parts of files
+git add -p, --patch <path/to/file>
+git add -p, --patch
+
+#interactively stage a file
+git add -i, --interactive
 ```
 
-# git add
+## git commit
+
+git commit "Commit files to the repository"
+
 ```
-git add README.md
-git add .
-git add -A
+git commit -m "Some meaningful message"
+git commit -m "Some meaningful message" --allow-empty
+git commit -p <path/to/file>
+git commit -a -m "Some meaningful message"
+git commit -S -m "Some meaningful message"
+git commit --amend
+git commit <path/to/file1> <path/to/file1> ...
+git
 ```
 
-# git commit
-```
-git commit -am "Some meaningful message"
-```
+## git status
 
-# git status
+## git log
 
-# git log
+## branches
 
-# branches
+git branch "Main Git command for working with branches"
+
 ```
 git branch -M main
 ```
 
-# git checkout
+## git checkout
 
-# git clone
+git checkout "Checkout a branch of paths to the working tree"
+
+```
+git checkout -
+git checkout .
+git checkout
+git checkout -b <branch_name>
+```
+
+## git clone
 
 used to clone an existing repository into your computer
 ```
@@ -82,7 +147,7 @@ git clone <repository-url>
 ```
 
 
-# git pull
+## git pull
 
 ```
 git pull <repository-url>
@@ -93,20 +158,8 @@ git pull origin main
 used to pull the latest changes from the remote repository
 into the local repository
 
-# remote
 
-```
-git remote add origin https://github.com/<username>/<repository>.git
-```
-
-# ssh authentication
-
-# remote (ssh)
-```
-git remote add origin git@github.com:username/your-repository.git
-```
-
-# git push
+## git push
 
 For every branch that is up to date or succesfuly pushed,
 add upstream (tracking)
