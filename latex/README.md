@@ -1,10 +1,4 @@
 
-## custom package
+## todo
 
-## custom class
 
-## directory structure
-
-## makefile
-
-## automation
