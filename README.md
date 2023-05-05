@@ -1,5 +1,4 @@
 
 ## todo
 
-git
-tmux and tmuxp
+git image
