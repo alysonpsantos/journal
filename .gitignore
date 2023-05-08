@@ -1,4 +1,5 @@
 /next/*
+*.swp
 *.aux
 *.bbl
 *.bcf

@@ -1,24 +1,25 @@
 
 ## some config 
 
+git config manage custom configuration options for Git repositories.
+can be local (for the current repository) or global (for the current user)
+
 ```
-git config (fatal: not in a git repository)
-(git config --local)
-git config --global
-git config --system
+git config --local (stored in .git/config)
+git config --global (stored in ~/.gitconfig)
+git config --system (stored in /etc/gitconfig)
 
 git config -l
 git config --list
-git config --global --list
+git config --list --local
+git config --list --global
+git config --list --system --show-origin
 
 git config user.name <username>
 git config user.email <email>
 
 git config --edit
 git config --global --edit
-
-(~/.gitconfig)
-git config --list --show-origin
 ```
 
 ## ssh authentication
