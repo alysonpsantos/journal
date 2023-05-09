@@ -1,8 +1,10 @@
-Nice tool
-really nice
-really really
 
-## basic
+# Tmuxp usage
 
-## yaml
+## Basic
 
+## YAML files
+
+## References
+
+- some medium page I don't remember, but I will

@@ -1,14 +1,7 @@
 
-# todo
+# Selected topics in python
 
-following docs.python.org/3/tutorial/
+## References
 
-modules.md
-input-output.md
-errors-exceptions.md
-virtualenv-packages.md
+- docs.python.org/3/tutorial/
 
-following datacamp (skill tracks)
-
-importing-cleaning-data.md
-data-manipulation.md
