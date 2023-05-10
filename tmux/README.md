@@ -89,7 +89,7 @@ Alt-c  __fzf_cd__
 
 ### tmux-sidebar
 
-I installed, but did not used it. Can be usefull
+I installed and, at first, did not use it. But it is really useful.
 
 keybindings
 
