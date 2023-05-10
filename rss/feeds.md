@@ -27,7 +27,7 @@ https://github.com/:user.atom
 
 #### References
 
-- https://vilcins.medium.com/rss-feeds-for-your-github-releases-tags-and-activity-cbda2c51373 (Access: 2023-05-10)
+- <https://vilcins.medium.com/rss-feeds-for-your-github-releases-tags-and-activity-cbda2c51373> (Access: 2023-05-10)
 
 ## News
 ## Blogs
