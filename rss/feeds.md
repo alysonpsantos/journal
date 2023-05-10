@@ -40,14 +40,17 @@ https://github.com/:user.atom
 
 #### References
 
-- [Browse the Web Better](https://youtu.be/nxV0CPNeFxY) 
-- [url](https://youtu.be/XrG1RvoQBZE)
-- https://www.youtube.com/watch?v=VVU9GfW_Amg&list=WL&index=5
+YouTube
+- [Browse the Web Better](https://youtu.be/nxV0CPNeFxY) (Access: 2023-05-10) 
+- [Uma forma melhor (e esquecida) de navegar na internet](https://youtu.be/e9Vx_oHalOY) (Access: 2023-05-10)
+- [How to use (and run) RSS feeds!](https://youtu.be/VVU9GfW_Amg) (Access: 2023-05-10)
+- [Como criar um Feed RSS do Instagram e Twitter para usar no Leitor RSS](https://youtu.be/XrG1RvoQBZE) (Access: 2023-05-10)
+- [STOP using SOCIAL MEDIA for News, RSS is MUCH BETTER!](https://youtu.be/_7LTwnAaQ3k) (Access: 2023-05-10)
 
-- https://rss.app/ 
-- https://feeder.co/knowledge-base/rss-content/rss-lists-popular-and-useful-rss-feeds/ (Access: 2023-05-10)
-- https://github.com/plenaryapp/awesome-rss-feeds (Access: 2023-05-10)
+Web
+- <https://rss.app/> (Access: 2023-05-10)
+- <https://feeder.co/knowledge-base/rss-content/rss-lists-popular-and-useful-rss-feeds/> (Access: 2023-05-10)
 
-For more
-
-- https://github.com/search?q=rss+feeds+list&type=repositories
+Github
+- <https://github.com/plenaryapp/awesome-rss-feeds> (Access: 2023-05-10)
+- [For more](https://github.com/search?q=rss+feeds+list&type=repositories)
