@@ -98,4 +98,10 @@ prefix + Tab        - toggle sidebar with a directory tree
 prefix + Backspace  - toggle sidebar and move cursor to it
 ```
 
+### tmux-sessionist
+
+I installed it and thought that I didn't use it, but I used its keybindings and missed them when I removed the plugin.
+
+Reinstalled it.
+
 # References
