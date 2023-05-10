@@ -72,6 +72,4 @@ grep -rli
 
 ## References
 
-YouTube. Vagner Fonseca.
-Aprendendo de verdade a usar o GREP no Linux
-https://youtu.be/MDADbtNLLnI
+- YouTube. Vagner Fonseca. Aprendendo de verdade a usar o GREP no Linux. https://youtu.be/MDADbtNLLnI

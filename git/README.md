@@ -1,8 +1,21 @@
 
-## some config 
+# Basic git
 
-git config manage custom configuration options for Git repositories.
-can be local (for the current repository) or global (for the current user)
+## Fundamentals
+
+Git is used for versioning
+
+Repository
+
+Repository operations: add, commit, push, pull, clone, etc. 
+
+What these operations do and the main "areas" in git workflow
+
+Good images (and referenced) in images folder. git-dataflow and git-workflow
+
+## Configuration
+
+git config manages custom configuration options for Git repositories. They can be local (for the current repository) or global (for the current user). Obs: system configurations
 
 ```
 git config --local (stored in .git/config)
@@ -22,11 +35,15 @@ git config --edit
 git config --global --edit
 ```
 
-## ssh authentication
+## Authentication
+
+### password
+
+### ssh
 
 more on ssh note
 
-## remote
+## Remote
 
 git remote "Manage set of tracked repositories ('remotes')"
 
@@ -35,22 +52,26 @@ Using ssh (password not available anymore)
 git remote add origin git@github.com:username/your-repository.git
 ```
 
-## first thing
+## Overview
+
+### Local repository
 
 You must initialize a new repository
 
 Initialize a new local repository (empty)
+
 ```
 git init
 ```
 
-More options
+Initializing with more options
+
 ```
 git init
 git init --initial-branch=<branch_name>
 ```
 
-### for managing dotfiles
+### Managing dotfiles
 
 Credit to (internet?)
 
@@ -76,6 +97,8 @@ dotfiles add ~/.bashrc
 dotfiles commit -m 'Initial commit with .bashrc'
 dotfiles branch -M main
 ```
+
+# Commands
 
 ## git add
 
@@ -121,7 +144,7 @@ git
 
 ## git log
 
-## branches
+## git branch
 
 git branch "Main Git command for working with branches"
 
@@ -147,7 +170,6 @@ used to clone an existing repository into your computer
 git clone <repository-url> 
 ```
 
-
 ## git pull
 
 ```
@@ -158,7 +180,6 @@ git pull origin main
 
 used to pull the latest changes from the remote repository
 into the local repository
-
 
 ## git push
 

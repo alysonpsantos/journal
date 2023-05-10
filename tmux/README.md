@@ -1,7 +1,5 @@
 
-# Terminal multiplexer
-
-## Install
+# Install
 
 ```
 sudo apt install tmux
@@ -23,37 +21,45 @@ Checking your version
 tmux -V
 ```
 
-## Beginning
+# First steps
+
+## Fundamentals
+
+How tmux works
+Client-server architecture
+
+## Getting help
 
 First steps in every learning process involve asking for help or guidance.
 
 You can get help outside tmux or inside it, use both. If you don't know how to be inside tmux, relax.
 All you have to do is type 'tmux', once tmux is installed.
 
-### Help outside tmux
+Outside tmux
 
 - tldr tmux
 - man tmux
 
-### Help inside tmux
+Inside tmux, if you can enter, of course ... and understand what is this 'prefix'
 
 - prefix + ?
 - prefix + : 'list-keys'
 
-### Initial commands
+## Initial commands
 
+### New session
 tmux new -s session-name
-
-Prefix + d
-
-tmux a[ttach] -t that-other-session-name
-
+### New session and sending commands
+Alternatively you can use tmuxp
+### Detach session
+### Attach session
+### New window
 ### Pane splitting
 
-See ~/.tmux.conf
 
+# Extra
 
-### Aliases
+## Aliases
 
 Some aliases I use in bash
 
@@ -71,6 +77,8 @@ and then, you can add some plugins. But, for now, plugins are next-level stuff t
 
 ### tmux-fzf
 
+Useful. Mostly because I don't remember all the tmux commands. Actually I don't remember any of them. And tmux documentation still is not my friend.
+
 keybindings
 
 ```
@@ -81,6 +89,8 @@ Alt-c  __fzf_cd__
 
 ### tmux-sidebar
 
+I installed, but did not used it. Can be usefull
+
 keybindings
 
 ```
@@ -88,8 +98,4 @@ prefix + Tab        - toggle sidebar with a directory tree
 prefix + Backspace  - toggle sidebar and move cursor to it
 ```
 
-## References
-
-- Some cool reference
-
-
+# References
