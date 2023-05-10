@@ -79,14 +79,6 @@ and then, you can add some plugins. But, for now, plugins are next-level stuff t
 
 Useful. Mostly because I don't remember all the tmux commands. Actually I don't remember any of them. And tmux documentation still is not my friend.
 
-keybindings
-
-```
-Ctrl-t __fzf_select__
-Ctrl-p __fzf_history__
-Alt-c  __fzf_cd__
-```
-
 ### tmux-sidebar
 
 I installed and, at first, did not use it. But it is really useful.
@@ -105,3 +97,7 @@ I installed it and thought that I didn't use it, but I used its keybindings and 
 Reinstalled it.
 
 # References
+
+- <https://dev.to/iggredible/tmux-tutorial-for-beginners-5c52>
+- <https://github.com/tmux/tmux>
+- <https://leanpub.com/the-tao-of-tmux/read>

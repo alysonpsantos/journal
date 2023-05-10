@@ -31,4 +31,6 @@ alias tl='tmuxp load'
 
 # References
 
-- some medium page I don't remember, but I will
+- <https://tmuxp.git-pull.com/index.html>
+- <https://tmuxp.git-pull.com/configuration/examples.html>
+- <https://leanpub.com/the-tao-of-tmux/read>
