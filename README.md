@@ -15,10 +15,14 @@ These files are useful to me and can be useful to someone else trying to learn m
 bash scripts
 ### commands
 basic commands that include text manipulation and networking
+### frontend
+about html and css (javascript outside frontend ... soft link?)
 ### git
 usage of git and git automation with scripts
 ### images
 images collected in the web and its references
+### javascript
+javascript and frameworks
 ### latex
 latex learning process documentation
 ### lynx
@@ -46,4 +50,4 @@ vim learning journey
 
 ## References
 
-- Some references
+References in each README.md file
