@@ -7,16 +7,6 @@ The folder contains important topics of vim usage. Files are added as I learn/pr
 
 ## Plugins
 
-Before using plugins it is adviseable to make a good usage of vim without plugins, i.e, plugins are next-level stuff
-
-I don't follow this rule in a strict way. I make use of some plugins. Right now the most importants plugins I use are VimTex and UltiSnips.
-
-VimTex allows me to learn about latex/tikz/circuitikz more easily. I don't have to use the terminal to compile my .tex files and I can view the changes in real time while editing (not the proper latex way, but good for learning ... at least learning about tikz/circuitikz).
-
-UltiSnips makes things faster. It is really motivating to make use of and to custom some snippets.
-
-These are some other the plugins that I use (and which I want to understand better) and the ones I intend to use in the future. And the reasons why I chose them.
-
 ### lervag/vimtex
 
 vimtex is a vim plugin that 'provides convenient functionality for editing LaTeX documents'.
