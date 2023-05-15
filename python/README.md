@@ -3,9 +3,6 @@
 
 Important topics of python
 
-## Organization
-
-
 ## References
 
 - <docs.python.org/3/tutorial/>

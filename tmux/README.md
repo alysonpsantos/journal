@@ -101,3 +101,4 @@ Reinstalled it.
 - <https://dev.to/iggredible/tmux-tutorial-for-beginners-5c52>
 - <https://github.com/tmux/tmux>
 - <https://leanpub.com/the-tao-of-tmux/read>
+- <https://github.com/dvmfa90/tmux-scripts>
