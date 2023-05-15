@@ -155,6 +155,9 @@ done
 
 # References
 
+- <https://www.networkworld.com/article/3688357/bash-scripting-tips-that-can-save-time-on-linux.html#tk.rss_linux>
+- <https://github.com/kickstartcoding/cheatsheets#cli-bash--git>
+
 References found [here](https://github.com/alebcay/awesome-shell#guides)
 - [Bash Official Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html)
 - [Bash Hackers Wiki](https://wiki.bash-hackers.org/)
@@ -169,8 +172,6 @@ References found [here](https://github.com/alebcay/awesome-shell#guides)
 - [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial/basics)
 - [A guide to learn bash](https://github.com/Idnan/bash-guide)
 - [Shell Field Guide](https://raimonster.com/scripting-field-guide/)
-
-- <https://github.com/kickstartcoding/cheatsheets#cli-bash--git>
 
 More references found [here](https://github.com/k4m4/terminals-are-sexy) 
 

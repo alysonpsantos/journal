@@ -1,3 +1,5 @@
+# grep command
+
 grep print lines that matches patterns
 g "re" p
 
@@ -72,4 +74,5 @@ grep -rli
 
 ## References
 
-- YouTube. Vagner Fonseca. Aprendendo de verdade a usar o GREP no Linux. https://youtu.be/MDADbtNLLnI
+- YouTube. Vagner Fonseca. Aprendendo de verdade a usar o GREP no Linux. <https://youtu.be/MDADbtNLLnI>
+- <https://www.networkworld.com/article/3696273/taking-advantage-of-the-grep-commands-many-options.html#tk.rss_linux>
