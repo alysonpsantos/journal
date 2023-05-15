@@ -190,3 +190,7 @@ git push --set-upstream origin main
 git push -u origin main
 git push
 ```
+
+## References
+
+- <https://github.com/kickstartcoding/cheatsheets#cli-bash--git>

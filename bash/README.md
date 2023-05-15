@@ -170,6 +170,8 @@ References found [here](https://github.com/alebcay/awesome-shell#guides)
 - [A guide to learn bash](https://github.com/Idnan/bash-guide)
 - [Shell Field Guide](https://raimonster.com/scripting-field-guide/)
 
-References found [here](https://github.com/k4m4/terminals-are-sexy) 
+- <https://github.com/kickstartcoding/cheatsheets#cli-bash--git>
+
+More references found [here](https://github.com/k4m4/terminals-are-sexy) 
 
 
