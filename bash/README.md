@@ -7,7 +7,7 @@ Before your first bash script you need to know some things.
 
 You need to add in the first line a shebang
 
-```
+```shell
 #! /bin/bash
 ```
 
