@@ -13,7 +13,7 @@ You need to add in the first line a shebang
 
 You can verify your shebang with the command
 
-```
+```shell
 which bash
 ```
 
@@ -23,7 +23,7 @@ To execute a script you need certain permissions and file permissions are manage
 
 For example, if you want to add +x to user u.
 
-```
+```shell
 chmod u+x hello_world.sh
 ```
 
@@ -40,14 +40,14 @@ Variables, operators and flow control. Basically
 
 A lot of errors and frustration come from this small, but important, detail
 
-```
+```shell
 # no spaces
 variable_name=value
 ```
 
 Example
 
-```
+```shell
 #!/bin/bash
 greeting=Hello
 name=world
