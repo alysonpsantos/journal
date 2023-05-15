@@ -58,18 +58,18 @@ echo $greeting $name
 
 The arithmetic expressions are
 
-```
+```shell
 +
 -
 *
 /
-** exponentiation
-% modulus
+** #exponentiation
+%  #modulus
 ```
 
 Numerical expressions can be calculated and stored in a variable using the syntax below
 
-```
+```shell
 var=$((expression))
 ```
 
@@ -79,7 +79,7 @@ Decimal calculations are possible with bc(bash calculator) command.
 
 Example
 
-```
+```shell
 # scale defines the number of decimal places in the output
 echo "scale=2;22/7" | bc
 ```
@@ -88,19 +88,19 @@ echo "scale=2;22/7" | bc
 
 Take user input
 
-```
+```shell
 read variable_name
 ```
 
 To prompt the user with a custom message, use the -p flag
 
-```
+```shell
 read -p "custom message" variable_name
 ```
 
 Example
 
-```
+```shell
 #!/bin/bash
 
 echo "Enter a number"
@@ -117,7 +117,7 @@ echo $result
 
 ### Logical Operators
 
-```
+```shell
 -eq
 -neq
 -gt
@@ -135,7 +135,7 @@ if (fi to end) (fi is if in reverse)
 if-else
 if-elif-else
 
-```
+```shell
 if [conditions]
     then
         commands
@@ -146,7 +146,7 @@ fi
 
 for
 
-```
+```shell
 for i in {1..5}
 do
     echo $i
