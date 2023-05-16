@@ -14,12 +14,12 @@ Other places are possible.
 When invoking Python, you may speciy any of these options:
 
 ```sh
-python [-bBdEhiIOqsSuvVWx?] [-c command | -m module-name | script | -]
-[args]
+python [-bBdEhiIOqsSuvVWx?] [-c command | -m module-name | script | -] [args]
 ```
 
 The most commom use case is, of course, a simple invocation of a
 script:
+
 ```sh
 python myscript.py
 ```
@@ -97,7 +97,6 @@ PYTHONTHREADDEBUG
 PYTHONDUMPREFS
 PYTHONDUMPREFSFILE=FILENAME
 ```
-
 
 ## References
 
