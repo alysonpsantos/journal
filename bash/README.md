@@ -156,6 +156,7 @@ done
 # References
 
 - <https://www.networkworld.com/article/3688357/bash-scripting-tips-that-can-save-time-on-linux.html#tk.rss_linux>
+- <https://www.reddit.com/r/bash/comments/xcejrb/set_x_is_your_friend/>
 - <https://github.com/kickstartcoding/cheatsheets#cli-bash--git>
 
 References found [here](https://github.com/alebcay/awesome-shell#guides)

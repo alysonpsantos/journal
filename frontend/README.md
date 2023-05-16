@@ -3,7 +3,8 @@
 
 ## Inspiration
 
-- <https://www.studiogusto.com/>
+- <https://www.studiogusto.com/> (Access: 2023-05-15)
+- <https://sophie.studio/> (Access: 2023-05-16)
 
 ## References
 
