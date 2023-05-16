@@ -22,11 +22,24 @@ Server provides endpoints, interfaces that the client can use (like buttons in a
 
 ## The structure of a django application
 
-There is some sort of a method in this madness.
+There is some sort of a method in this madness. Every django project has the exact same structure.
 
 A project is, basically, a website.
 
-Project is a collection of applications.
+Project is a collection of applications. And each application provides
+a certain functionality, like in your cellphone.
+
+We have these apps (you can check on settings.py)
+```
+admin
+auth
+contenttypes
+session #we don't use it anymore, kind of legacy
+messages #to display one time notifications to the user
+staticfiles #serving static files (images, css files, etc.)
+```
+
+We can have our custom apps
 
 An application can be shared across multiple projects.
 
@@ -94,15 +107,21 @@ runserver
 python manage.py runserver 9000 #9000 is the port number
 ```
 
+### First app
+
+
+
 ## dj4e-samples project
 
-Following the this tutorial [here](https://youtu.be/o0XbHvKxw7Y)
+Following this tutorial [here](https://youtu.be/o0XbHvKxw7Y)
 
 Files in this Github [repo](https://github.com/csev/dj4e-samples)
 
+### First app
+
 Our first application is hello
 
-Hello application has these files
+Hello application has these files, as expected
 ```
 __init__.py
 admin.py
