@@ -1,4 +1,3 @@
-
 # Python Interpreter
 
 python - an interpreted, interactive, object-oriented programming
@@ -101,6 +100,5 @@ PYTHONDUMPREFSFILE=FILENAME
 ## References
 
 - man python
-- <docs.python.org/3/tutorial/>
-- <https://docs.python.org/3/using/cmdline.html#using-on-general>
-
+- [Official Python Tutorial](docs.python.org/3/tutorial/)
+- [Using the cmdline (official)](https://docs.python.org/3/using/cmdline.html#using-on-general)

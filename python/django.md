@@ -1,4 +1,3 @@
-
 # Django
 
 ## Introduction
@@ -108,7 +107,6 @@ python manage.py runserver 9000 #9000 is the port number
 ```
 
 ### First app
-
 
 
 ## dj4e-samples project
